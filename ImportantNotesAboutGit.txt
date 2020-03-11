@@ -1,0 +1,32 @@
+create a repository in github
+execute below command to connect remote to local git repo
+git remote add origin "https:\\git repo path"
+git push -u origin master
+-u is required only in the first push
+
+To verify if you have been connected to the remote repo on github, execute below command
+git remove-v
+you will get 2 outputs , one for fetch and another for pull
+
+To see the history of various commits on local machine:
+git log --oneline
+
+
+To see the version difference:
+gitk <filename>
+
+If you are not sure which all files are in local repo:
+
+git ls-files
+
+below commands are used to commit files in local git:
+git add <filename>
+git commit -m "message like initial commit"
+
+to execute both commands in a single go:
+
+git commit -am "message"
+
+ssh-keygen -t rsa -C "gaurav.jand@gmail.com"
+Copy the public gile in github
+ssh -T git@github
