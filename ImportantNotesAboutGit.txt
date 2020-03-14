@@ -30,3 +30,12 @@ git commit -am "message"
 ssh-keygen -t rsa -C "gaurav.jand@gmail.com"
 Copy the public gile in github
 ssh -T git@github
+
+
+The name of repo can be changed in github by going into settings. Once you cahnge the name of repo, you need to update the settings at local git as well via the follwoing command:
+
+git remote -v command will show the push and fetch urls of remote
+
+use below command to point got origin to newly named repo:
+
+git remote set-url origin "new repo url for ssh"
