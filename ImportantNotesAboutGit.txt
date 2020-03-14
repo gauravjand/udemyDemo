@@ -39,3 +39,17 @@ git remote -v command will show the push and fetch urls of remote
 use below command to point got origin to newly named repo:
 
 git remote set-url origin "new repo url for ssh"
+
+below command will show all the commits and their headers of the repo
+
+git log --oneline
+
+
+copy one header
+
+and execute below command
+
+got show <header>
+
+this will show all the adds and deletes at this point of commit
+
