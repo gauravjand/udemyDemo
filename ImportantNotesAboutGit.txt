@@ -53,3 +53,18 @@ got show <header>
 
 this will show all the adds and deletes at this point of commit
 
+
+
+
+----------How to create a branch on local git and then push it to remote github------------------
+
+
+git branch -b <branchname>
+The above command will create a branch n local git
+This branch will contain all the files from the master branch or the branch on top of which you created this branch
+
+Finally push this branch to remote github
+
+
+git push -u origin <the branch name you wish to push>
+
