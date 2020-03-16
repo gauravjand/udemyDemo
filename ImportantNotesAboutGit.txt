@@ -68,3 +68,36 @@ Finally push this branch to remote github
 
 git push -u origin <the branch name you wish to push>
 
+
+to remove a file from git:
+
+git rm <file name>
+
+but after removing you have to commit and push the changes too
+
+
+To push a branch created locally using "git checkout -b <branchname>", use the below command:
+
+git push -u origin <branch name>
+
+
+
+To delete a branch from git and github, follow below steps:
+
+git branch -a tells you all the available branches locally
+
+git branch -d <branch name> deletes the branch locally
+
+you may go and delete the branch on github through UI, but deleting branch on remote doesnt delete the branch from local git, you have to use -d with git branch as told above
+
+But finally, to synch the deleted branch local and remote, do the following:
+
+git fetch -p (p is prune)
+
+
+
+Hot to pull the remotely created branch in your local git:
+
+git fetch
+
+
